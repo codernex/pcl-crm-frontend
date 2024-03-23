@@ -6,7 +6,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const baseApi = createApi({
   reducerPath: "baseApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://crm-api-indol.vercel.app/api/v1",
+    baseUrl: "https://crm-api-sable.vercel.app/api/v1",
   }),
   tagTypes: ["User", "Customer", "Project"],
   endpoints: () => ({}),
