@@ -14,6 +14,12 @@ const fileUpload = async (imageFile: File) => {
     }
   );
   const data = await res.json();
+
+  if (data.error) {
+    alert(data.error?.message);
+    return "";
+  }
+
   return data.secure_url;
 };
 

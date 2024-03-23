@@ -144,7 +144,7 @@ const ManageProjects = () => {
                         <td className="border-b border-[#eee] py-5 px-4 dark:border-strokedark">
                           <p className="text-black dark:text-white flex items-center gap-x-1">
                             {project?.documents?.map((item,i)=>{
-                              if(item.includes('pdf')) return <FaFilePdf size={20} onClick={()=>window.open(item)} className="text-red-400 cursor-pointer" key={i}/>;
+                              if(item?.includes('pdf')) return <FaFilePdf size={20} onClick={()=>window.open(item)} className="text-red-400 cursor-pointer" key={i}/>;
                               return (
                                 <img onClick={()=>window.open(item)} className="w-10 h-10 rounded-sm" src={item} key={i}/>
                               )
